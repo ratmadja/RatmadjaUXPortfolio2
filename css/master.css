@@ -133,12 +133,16 @@ header {
 
 
 /* ------Start of Label Styling------ */
+.label-container {
+  text-align: center;
+}
 .label-section {
   margin-top: 4em;
   margin-bottom: 0em;
   padding-bottom: 0.5em;
-  border-bottom: 1px solid #DA9218;
   display: inline-block;
+  border-bottom: 1px solid #DA9218;
+  box-shadow: inset 0 -1px 0 #DA9218;
 }
 /* ------End of Label Styling------ */
 
@@ -160,17 +164,14 @@ header {
   color: #828282;
 }
 .hero a {
-  /* border: 1px solid  red; */
   color: #333333;
   text-decoration: none;
-  border-bottom: 1px solid #E0E0E0;
-  box-shadow: inset 0 -3px 0 #E0E0E0;
-  transition: background 0.3s ease-out;
+  border-bottom: 1px solid #f5c4c2;
+  box-shadow: inset 0 -1px 0 #f5c4c2;
+  transition: box-shadow .2s cubic-bezier(0,0,.58,1);
 }
 .hero a:hover {
-  color: #1342E7;
-  border-bottom: 1px solid #6482EA;
-  box-shadow: inset 0 -3px 0 #6482EA;
+  box-shadow: inset 0 -6px 0 #f5c4c2;
 }
 /* ------End of Hero Styling------ */
 
@@ -188,12 +189,18 @@ header {
   padding-bottom: 0.25em;
   font-size: 1em;
   font-weight:400;
-  text-decoration: none;
+  /* text-decoration: none;
   color: #1342E7;
+  border-bottom: 1px solid #1342E7; */
+  color: #1342E7;
+  text-decoration: none;
   border-bottom: 1px solid #1342E7;
+  box-shadow: inset 0 -1px 0 #1342E7;
+  transition: box-shadow .2s cubic-bezier(0,0,.58,1);
 }
 .workdesc a:hover, .studiodesc a:hover {
-  color: #6482EA;
+  box-shadow: inset 0 -3px 0 #1342E7;
+  transition: box-shadow .2s cubic-bezier(0,0,.58,1);
 }
 .workdesc {
   margin-top: 2em;
@@ -266,17 +273,17 @@ footer {
 
 
 @media only screen and (min-width:1281px) {
-  .container {
+  /* .container {
     border: 1px solid grey;
     margin: auto;
-  }
+  } */
 }
 
 /*bluezone*/
 @media only screen and (min-width: 1024px) and (max-width: 1280px) {
-  .container {
+  /* .container {
     border: 1px solid blue;
-  }
+  } */
   main {
     margin: 0em 5em;
   }
@@ -287,9 +294,9 @@ footer {
 
 /*redzone*/
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-  .container {
+  /* .container {
     border: 1px solid red;
-  }
+  } */
   main {
     margin: 0em 5em;
   }
@@ -312,7 +319,7 @@ footer {
     font-size: 2.67em;
   }
   .workdesc {
-    margin-top: 2em;
+    margin-top: 1em;
     display: flex;
     flex-direction: column;
   }
@@ -327,9 +334,9 @@ footer {
 
 /*greenzone*/
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  .container {
+  /* .container {
     border: 1px solid green;
-  }
+  } */
   main {
     margin: 0em 1.33em;
   }
@@ -345,16 +352,16 @@ footer {
     margin-bottom: 1.75em;
   }
   .hero h3 {
-    font-size: .9em;
+    font-size: 0.9em;
   }
   .hero h1 {
-    font-size: 1.33em;
+    font-size: 1.67em;
   }
   .hero {
-    padding-top: 4em;
-  }
-  .label-container {
-    text-align: center;
+    padding-top: 2em;
+    /* only instance of added padding-left and padding-right for hero text */
+    padding-left: 1em;
+    padding-right: 1em;
   }
   .label-section {
     display: block;
@@ -367,7 +374,7 @@ footer {
     width: 100%;
   }
   .workdesc {
-    margin-top: 2em;
+    margin-top: 1em;
     display: flex;
     flex-direction: column;
   }
@@ -393,7 +400,6 @@ footer {
     margin-top: 4em;
     margin-bottom: 0em;
     padding-bottom: 0.5em;
-    border-bottom: 1px solid #DA9218;
     display: inline-block;
   }
   .workdesc p, .studiodesc p {
@@ -403,9 +409,9 @@ footer {
 
 /*purplezone*/
 @media only screen and (min-width: 280px) and (max-width: 479px) {
-  .container {
-    border: 1px solid purple;
-  }
+  /* .container {
+    border: 1px solid pink;
+  } */
   main {
     margin: 0em 1.33em;
   }
@@ -428,13 +434,10 @@ footer {
     font-size: 1em;
   }
   .hero {
-    padding-top: 3em;
+    padding-top: 2em;
   }
   p {
     font-size: .9em;
-  }
-  .label-container {
-    text-align: center;
   }
   .label-section {
     margin-top: 4em;
@@ -468,7 +471,6 @@ footer {
     margin-top: 4em;
     margin-bottom: 0em;
     padding-bottom: 0.5em;
-    border-bottom: 1px solid #DA9218;
     display: inline-block;
   }
   .workdesc p, .studiodesc p {
