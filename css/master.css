@@ -3,10 +3,12 @@
 }
 
 .container {
-  margin: auto;
   max-width: 1280px;
+  /* border: 8px solid #EDE3E4; */
 }
-
+main {
+  margin: 0em 8em;
+}
 
 
 /* Start of typography sizes */
@@ -15,11 +17,12 @@ html, .root {
   line-height: 27px;
 }
 body, .article {
-  font-family: 'lato', sans-serif;
+  color: #333333;
+  font-family: 'alegreya','georgia', serif;
+  font-weight: 400;
   font-size: 1em;
   line-height: 1.5em;
   /* max-width: 560px; */
-  margin: 0em 8em;
 }
 h1, .h1 {
   font-family: 'work sans', sans-serif;
@@ -30,21 +33,21 @@ h1, .h1 {
   margin-bottom: 1.05882352em;
 }
 h2, .h2 {
-  font-family: 'lato', sans-serif;
+  font-family: 'alegreya','georgia', serif;
   font-size: 2em;
   line-height: 1.5em;
   margin-top: 0.75em;
   margin-bottom: 0.75em;
 }
 h3, .h3 {
-  font-family: 'lato', sans-serif;
+  font-family: 'alegreya','georgia', serif;
   font-size: 1.38888889em;
   line-height: 2.16em;
   margin-top: 1.08em;
   margin-bottom: 0em;
 }
 h4, .h4 {
-  font-size: 1em;
+  font-family: 'alegreya','georgia', serif;
   line-height: 1.5em;
   margin-top: 1.5em;
   margin-bottom: 0em;
@@ -92,6 +95,9 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin-top: 4em;
+  margin-left: 4em;
+  margin-right: 4em;
 }
 .ralogo {
   background: url(../assets/homepage/ra-logo32h.svg) center / cover;
@@ -99,10 +105,12 @@ header {
   width: 50.67px;
 }
 .nav-main {
+  /* border: 1px solid red; */
   width: 240px;
 }
 .menu {
   /* border-bottom: 1px solid #E6E6E6; */
+  margin-bottom: 0em;
   line-height: 1.5em;
   display: flex;
   justify-content: space-between;
@@ -113,32 +121,99 @@ header {
   padding-bottom: 0.45em;
   text-decoration: none;
   color: #333333;
-  font-size: 0.75em;
+  font-size: 0.67em;
   font-weight: 500;
   font-family: 'work sans', sans-serif;
 }
 .menu a:hover {
   border-bottom: 1px solid #DA9218;
-  margin-bottom: 1em;
 }
 /*------- End of logo and nav styling -------*/
 
 
+/* ------Start of Label Styling------ */
+.label-section {
+  margin-top: 4em;
+  margin-bottom: 0em;
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid #DA9218;
+  display: inline-block;
+}
+/* ------End of Label Styling------ */
+
+
+
+/* ------Start of Hero Styling------ */
+.hero {
+  padding-top: 8em;
+}
+.hero h1 {
+  font-family: 'bitter', 'georgia', serif;
+  font-size: 2.67em;
+  line-height: 1.5em;
+}
+.hero h3 {
+  line-height: 1.5em;
+}
+.hero h3 span {
+  color: #828282;
+}
+.hero a {
+  /* border: 1px solid  red; */
+  color: #333333;
+  text-decoration: none;
+  border-bottom: 1px solid #E0E0E0;
+  box-shadow: inset 0 -3px 0 #E0E0E0;
+  transition: background 0.3s ease-out;
+}
+.hero a:hover {
+  color: #1342E7;
+  border-bottom: 1px solid #1342E7;
+  box-shadow: inset 0 -3px 0 #1342E7;
+}
+/* ------End of Hero Styling------ */
+
 
 
 /* ------Start of Work Styling------ */
-.workcover{
+.workcover, .studiocover {
+  padding-top: 3em;
   width: 100%;
 }
+.studiocover, .studiodesc {
+  width: 66%;
+}
+.workdesc a, .studiodesc a {
+  padding-bottom: 0.25em;
+  font-size: 1em;
+  font-weight:400;
+  text-decoration: none;
+  color: #1342E7;
+  border-bottom: 1px solid #1342E7;
+}
+.workdesc a:hover, .studiodesc a:hover {
+  color: #6482EA;
+}
+.workdesc {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: row;
+}
+.workdesc .desc1 {
+  width: 33%;
+}
+.workdesc .desc2 {
+  width: 66%;
+  color: #828282;
+}
+.studiodesc p {
+  color:#828282;
+}
+.work-scope {
+  font-size: .9em;
+  color: #4F4F4F;
+}
 /* ------End of Work Styling------ */
-
-
-
-
-
-
-
-
 
 
 
@@ -148,94 +223,243 @@ header {
 }
 
 footer {
-  /* border: 1px solid black; */
+  margin-top: 6.67em;
+  border-top: 0.25px solid #E0E0E0;
   color: #333333;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.contact {
+  width: 100%;
+  margin-top: 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  margin: 0em 4em;
 }
-
-.footer-separator {
-  margin: auto;
-  width: 16em;
-  height: 1px;
-  background-color: #DA9218;
-  margin-top: 0.75em;  /*Controls distance to section-title*/
-}
-
-.email {
-  padding-top: 1em;
-  margin-bottom: 0.5em;
-}
-
 .contactlinks {
-  width: 220px;
+  width: 200px;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 2em;
-  border-bottom: 1px solid #DA9218;
 }
-
 .contact-link a {
-  color: #777777;
-  font-family: 'work sans', sans-serif;
-  font-size: 0.85em;
-  font-weight:500;
+  margin-bottom: 0em;
+  font-size: .9em;
+  font-weight:400;
   text-decoration: none;
-  padding-bottom: 0.25em;
+  color: #1342E7;
+  border-bottom: 1px solid #1342E7;
 }
-
 .contact-link a:hover {
-  color: #333333;
+  color: #6482EA;
 }
-
-.credit {
-  text-align: center;
-  color: #333333;
-  font-weight: 400;
-  text-transform: capitalize;
-  margin-bottom: 3em;
+.site-credit {
+  font-weight: 300;
+  color: #BDBDBD;
+  font-size: 0.9em;
+  margin-top: 1em;
 }
-/* ------End of Footer Styling------ */
+ /* ------End of Footer Styling------ */
 
 
 @media only screen and (min-width:1281px) {
-
+ .container {
+   border: 1px solid grey;
+   margin: auto;
+ }
 }
 
 /*bluezone*/
 @media only screen and (min-width: 1024px) and (max-width: 1280px) {
-
-  /* .container {
+  .container {
   border: 1px solid blue;
-  } */
-
+  }
+  main {
+      margin: 0em 5em;
+  }
+  .hero h3 {
+      font-size: 1em;
+  }
 }
 
 /*redzone*/
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-
-  /* .container {
+  .container {
     border: 1px solid red;
-  } */
-
+  }
+  main {
+      margin: 0em 5em;
+  }
+  header {
+    margin-top: 2.67em;
+    margin-left: 2.67em;
+    margin-right: 2.67em;
+  }
+  .hero h3 {
+      font-size: 1em;
+  }
+  .hero h1 {
+    font-size: 2em;
+  }
+  .hero {
+    padding-top: 8em;
+  }
+  .label-section {
+    margin-top: 4em;
+    margin-bottom: 0em;
+    font-size: 2.67em;
+  }
+  .workdesc {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+  }
+  .workdesc .desc1 {
+    width: 100%;
+  }
+  .workdesc .desc2 {
+    margin-top: 1.78em;
+    width: 100%;
+    color: #828282;
+  }
 }
 
 /*greenzone*/
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-
-  /* .container {
+  .container {
     border: 1px solid green;
-  } */
-
+  }
+  main {
+      margin: 0em 1.33em;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2.67em;
+    margin-bottom: 0em;
+  }
+  .ralogo {
+    margin-bottom: 1.75em;
+  }
+  .hero h3 {
+      font-size: .9em;
+  }
+  .hero h1 {
+    font-size: 1.33em;
+  }
+  .hero {
+    padding-top: 4em;
+  }
+  .label-container {
+    text-align: center;
+  }
+  .label-section {
+    display: block;
+    margin-top: 4em;
+    margin-bottom: 0em;
+    font-size: 2em;
+  }
+  .workcover {
+    padding-top: 3em;
+    width: 100%;
+  }
+  .workdesc {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+  }
+  .workdesc .desc1 {
+    width: 100%;
+  }
+  .workdesc .desc2 {
+    margin-top: 1.78em;
+    width: 100%;
+    color: #828282;
+  }
+footer {
+    align-items: center;
+  }
+  .contact {
+    width: 100%;
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .label-section {
+    margin-top: 4em;
+    margin-bottom: 0em;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid #DA9218;
+    display: inline-block;
+  }
+  .workdesc p, .studiodesc p {
+    font-size: 0.9em;
+  }
 }
 
 /*purplezone*/
 @media only screen and (min-width: 280px) and (max-width: 479px) {
-
-  /* .container {
+  .container {
     border: 1px solid purple;
-  } */
-
+  }
+  main {
+      margin: 0em 1.33em;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2.67em;
+    margin-bottom: 0em;
+  }
+  .ralogo {
+    margin-bottom: 1.75em;
+  }
+  .hero h3 {
+      font-size: 1em;
+  }
+  .hero h1 {
+    font-family: 'alegreya', 'georgia', serif;
+    font-size: 1em;
+  }
+  .hero {
+    padding-top: 3em;
+  }
+  .label-container {
+    text-align: center;
+  }
+  .label-section {
+    margin-top: 4em;
+    margin-bottom: 0em;
+    font-size: 2em;
+  }
+  .workdesc {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+  }
+  .workdesc .desc1 {
+    width: 100%;
+  }
+  .workdesc .desc2 {
+    margin-top: 1.78em;
+    width: 100%;
+    color: #828282;
+  }
+  .studiocover {
+    width: 100%;
+  }
+  .studiodesc {
+    width: 100%;
+  }
+  p {
+    font-size: .9em;
+  }
 }
