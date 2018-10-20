@@ -205,10 +205,10 @@ header {
 }
 .workdesc .desc2 {
   width: 66%;
-  color: #828282;
+  color: #333333;
 }
 .studiodesc p {
-  color:#828282;
+  color:#333333;
 }
 .work-scope {
   font-size: .9em;
@@ -322,7 +322,6 @@ footer {
   .workdesc .desc2 {
     margin-top: 1.78em;
     width: 100%;
-    color: #828282;
   }
 }
 
@@ -378,7 +377,6 @@ footer {
   .workdesc .desc2 {
     margin-top: 1.78em;
     width: 100%;
-    color: #828282;
   }
   footer {
     align-items: center;
@@ -454,7 +452,6 @@ footer {
   .workdesc .desc2 {
     margin-top: 1.78em;
     width: 100%;
-    color: #828282;
   }
   footer {
     align-items: center;
