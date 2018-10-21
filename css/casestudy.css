@@ -175,7 +175,7 @@ nav {
 /*--Start of Sticky Navbar class--*/
 .sticky {
   background-color: rgba(250,250,250,.98);
-  height: 3em;
+  height: 4em;
   position: fixed;
   width: 100%;
   margin: auto;
