@@ -161,19 +161,21 @@ footer {
 
 
 
+
 /*------- Start of nav styling -------*/
 nav {
-  border-bottom: 1px solid #C5C5C5;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 4.5em;
+  height: 4em;
+  padding: 0em 8em;   /*Match main's margin*/
 }
 
 
 /*--Start of Sticky Navbar class--*/
 .sticky {
-  background-color: #FFFFFF;
+  background-color: rgba(250,250,250,.98);
+  height: 3em;
   position: fixed;
   width: 100%;
   margin: auto;
@@ -181,18 +183,24 @@ nav {
   left: 0;
   padding: 0em 8em;   /*Match main's margin*/
 }
+
 /*---End of Sticky Navbar class--*/
 
 .navmenu {
   z-index: 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav-home, .nav-nextcs {
   font-family: 'work sans', sans-serif;
   font-size: 0.67em;
   text-decoration: none;
-  color: #919191;
+  color: #333333;
   width: 20%;
+  margin: 0em;
 }
 
 .nav-nextcs {
@@ -212,20 +220,44 @@ nav {
   font-size: 0.9em;
   text-decoration: none;
   color: #333333;
+  margin: 0em;
 }
 /*------- End of nav styling -------*/
 
 
 
-/*------- Start of hero styling -------*/
+/*------- Start of header styling -------*/
 
-.hero-casestudy {
-  height: 800px;
-  border: 1px solid red;
+header {
+  background: linear-gradient(#FAFAFA, #E2E2E2);
+}
+.hero-tagline {
+  font-family: 'alegreya sans', sans-serif;
+  text-align: center;
+  margin-top: 2em;
+}
+.hero-desc {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding-top: 1em;
+}
+.hero-desc-text {
+  margin: 0em 1em;
+  color: #828282;
+  font-family: 'alegreya sans', sans-serif;
+  text-align: center;
+}
+.hero-img {
+  /* border: 1px solid red; */
+  height: 720px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: pink;
+  position: relative;
+  top: 5em;
 }
 
 .ixd720h {
@@ -236,7 +268,7 @@ nav {
   position: absolute;
   z-index: 1;
 }
-/*------- End of hero styling -------*/
+/*------- End of header styling -------*/
 
 /*--------------------------------------------End of header styling -------*/
 
@@ -255,7 +287,7 @@ nav {
 
 /*------- Start of casestudy specs styling -------*/
 .cs-info {
-  margin-top: 6em;
+  margin-top: 12em;
   width: 80%;
   margin-left: 10%;
   display: flex;
@@ -273,14 +305,15 @@ nav {
 }
 
 .cs-info h5 {
-  color: #5E5E5E;
+  color: #828282;
+  font-size: 0.8em;
   line-height: 2em;
   margin-top: 0.25em;
   margin-bottom: 1em;
 }
 .cs-info li {
-  font-family: 'spectral', serif;
-  font-size: 0.95em;
+  font-family: 'alegreya sans', sans-serif;
+  font-size: 0.9em;
   line-height: 1.5em;
   /* font-family: 'fira mono', monospace;
   font-size: 1em;
@@ -292,12 +325,23 @@ nav {
 
 
 /*------- Start of text and image styling -------*/
+
+
+.cs-section h1,
+.cs-section h2,
+.cs-section h3,
+.cs-section h4,
+.cs-section h5,
+.cs-section p {
+  width: 60%;
+}
 .img-centered {
   display: block;
   padding-top: 4em;
   margin: auto;
 }
 .img-fullwidth{
+  /* background-color: #e2e2e2; */
   width: 100%;
   margin: auto;
   display: block;
@@ -357,17 +401,7 @@ nav {
   .container {
     margin: auto;
   }
-  /*--Start of Sticky Navbar class--*/
-  .sticky {
-    background-color: #FFFFFF;
-    position: fixed;
-    width: 100%;
 
-    top: 0;
-    left: 0;
-    padding: 0em 8em;   /*Match main's margin*/
-  }
-  /*---End of Sticky Navbar class--*/
 }
 
 
@@ -375,10 +409,13 @@ nav {
 /*bluezone*/
 @media only screen and (min-width: 1024px) and (max-width: 1280px) {
   .container {
-    border: 1px solid blue;
+    border: 2px solid blue;
   }
   main {
     margin: 0em 5em;
+  }
+  nav {
+    padding: 0em 5em; /*Match main's margin*/
   }
   .sticky {
     padding: 0 5em;  /*Match 'main' margin*/
@@ -389,16 +426,30 @@ nav {
 /*redzone*/
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .container {
-    border: 1px solid red;
+    border: 2px solid red;
   }
   main {
     margin: 0em 5em;
+  }
+  nav {
+    padding: 0em 5em; /*Match main's margin*/
   }
   .sticky {
     padding: 0em 5em;  /*Match 'main' margin*/
   }
   .img-centered {
     margin: auto;
+  }
+  .cs-section h1,
+  .cs-section h2,
+  .cs-section h3,
+  .cs-section h4,
+  .cs-section h5,
+  .cs-section p {
+    width: 80%;
+  }
+  .nav-cs a {
+    display: none;
   }
 }
 
@@ -407,17 +458,23 @@ nav {
 /*greenzone*/
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   .container {
-    border: 1px solid green;
+    border: 2px solid green;
   }
   main {
     padding-top: 0em;
     margin: 0em 2.67em;
   }
+  nav {
+    padding: 0em 2.67em; /*Match main's margin*/
+  }
+  .nav-nextcs {
+    width: 50%;
+  }
   .sticky {
     padding: 0 2.67em;  /*Match 'main' margin*/
   }
   main p {
-    font-size: 0.9em;
+    font-size: 0.95em;
   }
   .ralogo {
     margin-bottom: 1.75em;
@@ -440,11 +497,34 @@ nav {
   .pullquote26h {
     font-size: 1.11em;
   }
-  .nav-cs {
+  .nav-cs a {
     display: none;
   }
-  .nav-nextcs {
-    width: 50%;
+  .cs-info {
+    width: 60%;
+    margin-left: 20%;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .cs-info-roles,
+  .cs-info-deliverables,
+  .cs-info-specs {
+    width: 100%;
+    margin-bottom: 1em;
+  }
+  .cs-section h1,
+  .cs-section h2,
+  .cs-section h3,
+  .cs-section h4,
+  .cs-section h5,
+  .cs-section p {
+    width: 100%;
+  }
+  .hero-desc {
+    flex-direction: column;
+  }
+  .hero-desc-text {
+    margin-top: 1.33em;
   }
 }
 
@@ -453,14 +533,20 @@ nav {
 /*purplezone*/
 @media only screen and (min-width: 280px) and (max-width: 479px) {
   .container {
-    border: 1px solid pink;
+    border: 2px solid pink;
   }
   main {
     padding-top: 0em;
     margin: 0em 1.78em;
   }
+  nav {
+    padding: 0em 1.78em; /*Match main's margin*/
+  }
+  .sticky {
+    padding: 0 1.78em;  /*Match 'main' margin*/
+  }
   main p {
-    font-size: 0.9em;
+    font-size: 0.95em;
   }
   .ralogo {
     margin-bottom: 1.75em;
@@ -482,10 +568,36 @@ nav {
   .pullquote26h {
     font-size: 1.11em;
   }
-  .nav-cs {
+  .nav-cs a {
     display: none;
   }
   .nav-nextcs {
     width: 50%;
+  }
+  .cs-info {
+    width: 80%;
+    margin-left: 10%;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .cs-info-roles,
+  .cs-info-deliverables,
+  .cs-info-specs {
+    width: 100%;
+    margin-bottom: 1em;
+  }
+  .cs-section h1,
+  .cs-section h2,
+  .cs-section h3,
+  .cs-section h4,
+  .cs-section h5,
+  .cs-section p {
+    width: 100%;
+  }
+  .hero-desc {
+    flex-direction: column;
+  }
+  .hero-desc-text {
+    margin-top: 1.33em;
   }
 }

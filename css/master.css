@@ -399,7 +399,7 @@ footer {
     display: inline-block;
   }
   .workdesc p, .studiodesc p {
-    font-size: 0.9em;
+    font-size: 0.95em;
   }
 }
 
@@ -470,7 +470,7 @@ footer {
     display: inline-block;
   }
   .workdesc p, .studiodesc p {
-    font-size: 0.9em;
+    font-size: 0.95em;
   }
   .studiocover {
     width: 100%;
