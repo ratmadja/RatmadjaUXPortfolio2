@@ -1,9 +1,11 @@
 /*----------------------------------Start of identical to master.css */
+
 *, *:before, *:after {
   box-sizing: border-box;
 }
 .container {
   max-width: 1280px;
+
 }
 main {
   margin: 0em 8em;
@@ -162,11 +164,11 @@ footer {
   font-size: .9em;
   font-weight:400;
   text-decoration: none;
-  color: #1342E7;
-  border-bottom: 1px solid #1342E7;
+  color: #333333;
+  border-bottom: 1px solid #DA9218;
 }
 .contact-link a:hover {
-  color: #6482EA;
+  color: #BDBDBD;
 }
 .site-credit {
   font-weight: 300;
@@ -175,46 +177,13 @@ footer {
   margin-top: 1em;
 }
 /* ------End of Footer Styling------ */
+
 /*----------------------------------End of identical to master.css */
 
 
 
-/*------- Start of hero styling -------*/
-.hero-content {
-  /* border: 1px solid red; */
-  background-color: #FAFAFA;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-gap: 0.25%;
-}
+/* ----------------------------------Start of main styling----- */
 
-.hero-left {
-  /* border: 1px solid grey; */
-  grid-column: 1 / 7;
-  padding-right: 0.2%;
-}
-
-.hero-right {
-  /* border: 1px solid grey; */
-  grid-column: 7 / -1;
-  padding-left: 0.2%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-.hero-big {
-  display: block;
-  width: 100%;
-}
-.hero-small {
-  width: 100%;
-}
-/*------- End of hero styling -------*/
-
-
-
-/* ------Start of main styling----- */
 main {
   padding-top: 8em;
 }
@@ -235,48 +204,58 @@ main {
   padding-top: 1.167em;
   padding-bottom: 3.11em;
 }
+
 .pullquote26h {
+  color: #4F4F4F;
   font-family: 'bitter','georgia', serif;
   font-size: 1.44em;
   line-height: 1.7em;
-  margin-top: 1.08em;
-  margin-bottom: 1em;
-  /* transform: rotate(-90deg); */
+  margin-top: 2em;
+  margin-bottom: 2.2em;
 }
-.pullquote26h a {
-  color: #333333;
+.link-ref {
+  color: #4F4F4F;
   text-decoration: none;
-  border-bottom: 1px solid #e2e2e2;
-  box-shadow: inset 0 -1px 0 #e2e2e2;
+  box-shadow: inset 0 -1px 0 #BDBDBD;
   transition: box-shadow .2s cubic-bezier(0,0,.58,1);
 }
-.pullquote26h a:hover {
-  box-shadow: inset 0 -6px 0 #e2e2e2;
+.link-ref:hover {
+  color: #BDBDBD;
+}
+.link-work {
+  color: #4f4f4f;
+  text-decoration: none;
+  /* border-bottom: 1px solid #DA9218; */
+  box-shadow: inset 0 -1px 0 #DA9218;
+  transition: box-shadow .2s cubic-bezier(0,0,.58,1);
+}
+.link-work:hover {
+  box-shadow: inset 0 -4px 0 #DA9218;
 }
 .about-sectionlabel {
-  margin-top: 8em;
+  margin-top: 12em;
   color: #4F4F4F;
   font-size: 0.78em;
   text-transform: uppercase;
   font-weight: 400;
   font-family: 'work sans', sans-serif;
 }
-/* ------End of main styling----- */
+/* -------------------------------------End of main styling----- */
 
 
 
 @media only screen and (min-width:1281px) {
   .container {
-    border: 1px solid grey;
+    /* border: 1px solid grey; */
     margin: auto;
   }
 }
 
 /*bluezone*/
 @media only screen and (min-width: 1024px) and (max-width: 1280px) {
-  .container {
+  /* .container {
     border: 1px solid blue;
-  }
+  } */
   main {
     margin: 0em 5em;
   }
@@ -284,11 +263,12 @@ main {
 
 /*redzone*/
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-  .container {
+  /* .container {
     border: 1px solid red;
-  }
+  } */
   main {
     margin: 0em 5em;
+    padding-top: 6em;
   }
   header {
     margin-top: 1.34em;
@@ -297,19 +277,19 @@ main {
   .img-centered {
     margin: auto;
   }
-  main {
-    padding-top: 6em;
-  }
 }
 
 /*greenzone*/
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  .container {
+  /* .container {
     border: 1px solid green;
-  }
+  } */
   main {
-    padding-top: 4em;
-    margin: 0em 1.33em;
+    padding-top: 0em;
+    margin: 0em 2.67em;
+  }
+  main p {
+    font-size: 0.9em;
   }
   header {
     display: flex;
@@ -337,15 +317,22 @@ main {
     margin: auto;
     width: 80%;
   }
+  .pullquote26h {
+    font-size: 1.11em;
+  }
 }
 
 /*purplezone*/
 @media only screen and (min-width: 280px) and (max-width: 479px) {
-  .container {
+  /* .container {
     border: 1px solid purple;
-  }
+  } */
   main {
-    margin: 0em 1.33em;
+    padding-top: 0em;
+    margin: 0em 1.78em;
+  }
+  main p {
+    font-size: 0.9em;
   }
   header {
     display: flex;
@@ -371,5 +358,8 @@ main {
   }
   .img-centered {
     width: 100%;
+  }
+  .pullquote26h {
+    font-size: 1.11em;
   }
 }

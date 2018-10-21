@@ -141,8 +141,8 @@ header {
   margin-bottom: 0em;
   padding-bottom: 0.5em;
   display: inline-block;
-  border-bottom: 1px solid #DA9218;
-  box-shadow: inset 0 -1px 0 #DA9218;
+  /* border-bottom: 1px solid #DA9218;
+  box-shadow: inset 0 -1px 0 #DA9218; */
 }
 /* ------End of Label Styling------ */
 
@@ -166,12 +166,11 @@ header {
 .hero a {
   color: #333333;
   text-decoration: none;
-  border-bottom: 1px solid #f5c4c2;
-  box-shadow: inset 0 -1px 0 #f5c4c2;
+  box-shadow: inset 0 -1px 0 #DA9218;
   transition: box-shadow .2s cubic-bezier(0,0,.58,1);
 }
 .hero a:hover {
-  box-shadow: inset 0 -6px 0 #f5c4c2;
+  box-shadow: inset 0 -6px 0 #DA9218;
 }
 /* ------End of Hero Styling------ */
 
@@ -189,17 +188,13 @@ header {
   padding-bottom: 0.25em;
   font-size: 1em;
   font-weight:400;
-  /* text-decoration: none;
-  color: #1342E7;
-  border-bottom: 1px solid #1342E7; */
-  color: #1342E7;
   text-decoration: none;
-  border-bottom: 1px solid #1342E7;
-  box-shadow: inset 0 -1px 0 #1342E7;
+  color: #333333;
+  box-shadow: inset 0 -1px 0 #DA9218;
   transition: box-shadow .2s cubic-bezier(0,0,.58,1);
 }
 .workdesc a:hover, .studiodesc a:hover {
-  box-shadow: inset 0 -3px 0 #1342E7;
+  box-shadow: inset 0 -6px 0 #DA9218;
   transition: box-shadow .2s cubic-bezier(0,0,.58,1);
 }
 .workdesc {
@@ -212,14 +207,15 @@ header {
 }
 .workdesc .desc2 {
   width: 66%;
-  color: #333333;
+  color: #4F4F4F;
 }
 .studiodesc p {
   color:#333333;
 }
 .work-scope {
   font-size: .9em;
-  color: #4F4F4F;
+  font-style: italic;
+  color: #333333;
 }
 /* ------End of Work Styling------ */
 
@@ -257,11 +253,11 @@ footer {
   font-size: .9em;
   font-weight:400;
   text-decoration: none;
-  color: #1342E7;
-  border-bottom: 1px solid #1342E7;
+  color: #333333;
+  border-bottom: 1px solid #DA9218;
 }
 .contact-link a:hover {
-  color: #6482EA;
+  color: #BDBDBD;
 }
 .site-credit {
   font-weight: 300;
@@ -273,10 +269,10 @@ footer {
 
 
 @media only screen and (min-width:1281px) {
-  /* .container {
-    border: 1px solid grey;
+  .container {
+    /* border: 1px solid grey; */
     margin: auto;
-  } */
+  }
 }
 
 /*bluezone*/
@@ -481,5 +477,8 @@ footer {
   }
   .studiodesc {
     width: 100%;
+  }
+  .hero a:hover {
+    box-shadow: inset 0 -4px 0 #DA9218;
   }
 }
