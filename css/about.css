@@ -45,13 +45,14 @@ h3, .h3 {
   font-size: 1.38888889em;
   line-height: 2.16em;
   margin-top: 1.08em;
-  margin-bottom: 0em;
+  margin-bottom: 0.44em;
 }
 h4, .h4 {
   font-family: 'alegreya','georgia', serif;
+  font-size: 1.22em;
   line-height: 1.5em;
   margin-top: 1.5em;
-  margin-bottom: 0em;
+  margin-bottom: 0.44em;
 }
 h5, .h5 {
   font-family: 'work sans', sans-serif;
@@ -61,10 +62,12 @@ h5, .h5 {
   margin-bottom: 0em;
 }
 p, ul, ol, pre, table, blockquote {
+  font-size: 1em;
   margin-top: 0em;
   margin-bottom: 1.5em;
 }
 ul ul, ol ol, ul ol, ol ul {
+  font-size: 1em;
   margin-top: 0em;
   margin-bottom: 0em;
 }
