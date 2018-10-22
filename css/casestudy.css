@@ -177,9 +177,12 @@ nav {
 
 /*--Start of Sticky Navbar class--*/
 .sticky {
-  background-color: rgba(250,250,250,.98);
-  height: 4em;
   position: fixed;
+  transition-property: all;
+  transition-duration: 2s;
+  background-color: rgba(255,255,255,.95);
+  /* border-bottom: 1px solid #E1E1E1; */
+  height: 4em;
   width: 100%;
   margin: auto;
   top: 0;
@@ -362,7 +365,7 @@ header {
   text-transform: uppercase;
 }
 .pullquote26h {
-  color: #795961;
+  color: #333333;
   font-family: 'bitter','georgia', serif;
   font-size: 1.44em;
   line-height: 1.7em;
@@ -405,7 +408,7 @@ header {
   align-items: center;
 }
 .groupixd-2up {
-  width: 48%;
+  width: 45%;
   border-top: 1px solid #E2E2E2;
 }
 .ixdstills img {
@@ -427,11 +430,10 @@ header {
 .ixd640h {
   width: 283px;
   position: absolute;
+  border: 12px solid #000000;
+  border-radius: 40px;
 }
-.ixd640hcase {
-  position: absolute;
-  z-index: 1;
-}
+
 /*----End of IxD video styling ---*/
 
 
@@ -627,6 +629,9 @@ header {
     width: 100%;
     margin-bottom: 8em;
   }
+  .ixd640h {
+    border: 4px solid #000000;
+  }
   .img-2up-left {
     margin-right: 0em;
   }
@@ -717,9 +722,6 @@ header {
   .groupixd-2up {
     width: 100%;
     margin-bottom: 8em;
-  }
-  .ixd640hcase {
-    display: none;
   }
   .ixd640h {
     border: 4px solid #000000;

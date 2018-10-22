@@ -49,7 +49,7 @@ function onReady() {
     const scrollTop = $(window).scrollTop();
     $('.navmenu').toggleClass(
       'sticky',
-      scrollTop > stickyTopNav
+      scrollTop > stickyTopNav +800
     );
   };
 
